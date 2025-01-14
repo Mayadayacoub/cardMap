@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal Statistics Cards</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+  </head>
+
+  <body>
+    <div
+      class="grey-bg container-fluid d-flex justify-content-center align-items-center vh-100"
+    >
+      <section id="minimal-statistics" class="w-100">
+        <div class="row justify-content-center">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 m-1">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-body">
+                  <div class="media d-flex">
+                    <div class="media-body text-left">
+                      <h3 class="warning">64</h3>
+                      <span>In Progress</span>
+                    </div>
+                    <div class="align-self-center">
+                      <div
+                        class="spinner-border warning float-right"
+                        role="status"
+                      >
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 m-1">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-body">
+                  <div class="media d-flex">
+                    <div class="media-body text-left">
+                      <h3 class="success">64</h3>
+                      <span>Completed</span>
+                    </div>
+                    <div class="align-self-center">
+                      <i
+                        class="icon-check success font-large-1 float-right"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-4 col-md-6 col-sm-12 m-1">
+            <div class="card">
+              <div id="map" style="height: 250px; width: 100%"></div>
+              <div class="card-body">
+                <table>
+                  <tr>
+                    <td><i class="fas fa-map-marker-alt"></i></td>
+                    <td>
+                      <address></address>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="far fa-envelope"></i></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-phone"></i></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fab fa-instagram"></i></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
